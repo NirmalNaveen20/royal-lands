@@ -7,6 +7,7 @@ import {
   AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
@@ -18,6 +19,7 @@ import Cart from "../cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
 import { RxCross1 } from "react-icons/rx";
 import logo from "../../Images/logo.svg"
+import { BsJournalBookmark } from "react-icons/bs";
 
 const Header = ({ activeHeading }) => {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -162,7 +164,7 @@ const Header = ({ activeHeading }) => {
                 className="relative cursor-pointer mr-[15px]"
                 onClick={() => setOpenCart(true)}
               >
-                <AiOutlineShoppingCart
+                <BsJournalBookmark  
                   size={30}
                   color="rgb(255 255 255 / 83%)"
                 />
