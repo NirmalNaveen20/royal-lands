@@ -9,7 +9,7 @@ To install RoyalLands, follow these steps:
     Navigate to the root directory of the project in your terminal.
     Run npm install to install the dependencies.
     Create a .env file in the root directory and add your MongoDB database URL.
-    Run npm start to start the server and client.
+    Run npm start to start the server and client
 
 Features
 
