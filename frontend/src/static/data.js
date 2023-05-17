@@ -5,15 +5,15 @@ export const navItems = [
       url: "/",
     },
     {
-      title: "Best Selling",
+      title: "Top Rents",
       url: "/best-selling",
     },
     {
-      title: "Products",
+      title: "Lands",
       url: "/products",
     },
     {
-      title: "Events",
+      title: "Projects",
       url: "/events",
     },
     {

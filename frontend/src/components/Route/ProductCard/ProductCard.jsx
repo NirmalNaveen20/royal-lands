@@ -7,6 +7,7 @@ import {
   AiOutlineShoppingCart,
   AiOutlineStar,
 } from "react-icons/ai";
+import { BsJournalBookmark } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { backend_url } from "../../../server";
 import styles from "../../../styles/styles";
@@ -96,9 +97,9 @@ const ProductCard = ({ data,isEvent }) => {
                 {data.originalPrice ? data.originalPrice + " $" : null}
               </h4>
             </div>
-            <span className="font-[400] text-[17px] text-[#68d284]">
+            {/* <span className="font-[400] text-[17px] text-[#68d284]">
               {data?.sold_out} sold
-            </span>
+            </span> */}
           </div>
         </Link>
 
@@ -128,7 +129,7 @@ const ProductCard = ({ data,isEvent }) => {
             color="#333"
             title="Quick view"
           />
-          <AiOutlineShoppingCart
+          <BsJournalBookmark
             size={25}
             className="cursor-pointer absolute right-2 top-24"
             onClick={() => addToCartHandler(data._id)}
