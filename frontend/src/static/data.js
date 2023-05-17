@@ -144,69 +144,69 @@ export const navItems = [
       title: "Residential Properties",
       subTitle: "",
       image_Url:
-        "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
+        "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 2,
       title: "Commercial Properties",
       subTitle: "",
       image_Url:
-        "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-07/kosme1.png",
+        "https://images.pexels.com/photos/4178801/pexels-photo-4178801.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 3,
       title: "Industrial Properties",
       subTitle: "",
       image_Url:
-        "https://img.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories_335657-2345.jpg?w=2000",
+        "https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 4,
       title: "Agricultural Properties",
       subTitle: "",
       image_Url:
-        "https://www.shift4shop.com/2015/images/industries/clothing/clothing-apparel.png",
+        "https://images.pexels.com/photos/4861031/pexels-photo-4861031.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 5,
-      title: "Recreational Properties",
+      title: "Rental Properties",
       subTitle: "",
       image_Url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
+        "https://images.pexels.com/photos/5008399/pexels-photo-5008399.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 6,
       title: "Special Purpose Properties",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 7,
       title: "Mixed-Use Properties",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://images.pexels.com/photos/10006311/pexels-photo-10006311.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 8,
       title: "Luxury Properties",
       subTitle: "",
       image_Url:
-        "https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg",
+        "https://images.pexels.com/photos/2343465/pexels-photo-2343465.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 9,
       title: "Vacation Rental Properties",
       subTitle: "",
       image_Url:
-        "https://static.vecteezy.com/system/resources/previews/011/996/555/original/3d-black-headphone-illustration-ecommerce-icon-png.png",
+        "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 10,
       title: "Others",
       subTitle: "",
       image_Url:
-        "https://searchspring.com/wp-content/uploads/2022/10/Hero-Image-Platform-Others-2.png",
+        "https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ];
   
@@ -551,7 +551,7 @@ export const navItems = [
       link: "/carrers"
     },
     {
-      name: "Store Locations",
+      name: "Property Locations",
     },
     {
       name: "Our Blog",
@@ -590,7 +590,7 @@ export const navItems = [
       name: "Contact Us",
     },
     {
-      name: "Shipping",
+      name: "Agents",
     },
     {
       name: "Live chat",
