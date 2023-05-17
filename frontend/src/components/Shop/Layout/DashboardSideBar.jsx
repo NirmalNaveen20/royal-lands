@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineFolderAdd, AiOutlineGift } from "react-icons/ai";
+import { AiOutlineFolderAdd, AiOutlineGift,AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FiPackage, FiShoppingBag } from "react-icons/fi";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
@@ -8,6 +8,7 @@ import { CiMoneyBill, CiSettings } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { HiOutlineReceiptRefund } from "react-icons/hi";
+import { BsJournalBookmark, BsCardList } from "react-icons/bs";
 
 const DashboardSideBar = ({ active }) => {
   return (
@@ -31,7 +32,7 @@ const DashboardSideBar = ({ active }) => {
 
       <div className="w-full flex items-center p-4">
         <Link to="/dashboard-orders" className="w-full flex items-center">
-          <FiShoppingBag
+          <BsJournalBookmark
             size={30}
             color={`${active === 2 ? "crimson" : "#555"}`}
           />
@@ -40,20 +41,20 @@ const DashboardSideBar = ({ active }) => {
               active === 2 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Orders
+            All Requests
           </h5>
         </Link>
       </div>
 
       <div className="w-full flex items-center p-4">
         <Link to="/dashboard-products" className="w-full flex items-center">
-          <FiPackage size={30} color={`${active === 3 ? "crimson" : "#555"}`} />
+          <BsCardList size={30} color={`${active === 3 ? "crimson" : "#555"}`} />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
               active === 3 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Products
+            All Listings
           </h5>
         </Link>
       </div>
@@ -79,7 +80,7 @@ const DashboardSideBar = ({ active }) => {
 
       <div className="w-full flex items-center p-4">
         <Link to="/dashboard-events" className="w-full flex items-center">
-          <MdOutlineLocalOffer
+          <AiOutlineFundProjectionScreen
             size={30}
             color={`${active === 5 ? "crimson" : "#555"}`}
           />
@@ -88,7 +89,7 @@ const DashboardSideBar = ({ active }) => {
               active === 5 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Events
+            All Projects
           </h5>
         </Link>
       </div>
@@ -104,12 +105,12 @@ const DashboardSideBar = ({ active }) => {
               active === 6 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Create Event
+            Create Project
           </h5>
         </Link>
       </div>
 
-      <div className="w-full flex items-center p-4">
+      {/* <div className="w-full flex items-center p-4">
         <Link
           to="/dashboard-withdraw-money"
           className="w-full flex items-center"
@@ -126,7 +127,7 @@ const DashboardSideBar = ({ active }) => {
             Withdraw Money
           </h5>
         </Link>
-      </div>
+      </div> */}
 
       <div className="w-full flex items-center p-4">
         <Link to="/dashboard-messages" className="w-full flex items-center">
@@ -139,12 +140,12 @@ const DashboardSideBar = ({ active }) => {
               active === 8 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Shop Inbox
+            Messages
           </h5>
         </Link>
       </div>
 
-      <div className="w-full flex items-center p-4">
+      {/* <div className="w-full flex items-center p-4">
         <Link to="/dashboard-coupouns" className="w-full flex items-center">
           <AiOutlineGift
             size={30}
@@ -158,7 +159,7 @@ const DashboardSideBar = ({ active }) => {
             Discount Codes
           </h5>
         </Link>
-      </div>
+      </div> */}
 
       <div className="w-full flex items-center p-4">
         <Link to="/dashboard-refunds" className="w-full flex items-center">
@@ -171,7 +172,7 @@ const DashboardSideBar = ({ active }) => {
               active === 10 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Refunds
+            Booking Updates
           </h5>
         </Link>
       </div>
@@ -187,7 +188,7 @@ const DashboardSideBar = ({ active }) => {
               active === 11 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Settings
+            Agent Profile
           </h5>
         </Link>
       </div>

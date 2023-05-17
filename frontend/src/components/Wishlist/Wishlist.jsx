@@ -36,7 +36,7 @@ const Wishlist = ({ setOpenWishlist }) => {
                 onClick={() => setOpenWishlist(false)}
               />
             </div>
-            <h5>Wishlist Items is empty!</h5>
+            <h5>Wishlist is empty!</h5>
           </div>
         ) : (
           <>
@@ -91,7 +91,7 @@ const CartSingle = ({ data,removeFromWishlistHandler,addToCartHandler }) => {
         <div className="pl-[5px]">
           <h1>{data.name}</h1>
           <h4 className="font-[600] pt-3 800px:pt-[3px] text-[17px] text-[#d02222] font-Roboto">
-            US${totalPrice}
+            Rs. {totalPrice}
           </h4>
         </div>
         <div>

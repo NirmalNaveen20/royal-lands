@@ -50,7 +50,7 @@ const AdminDashboardMain = () => {
 
     {
       field: "total",
-      headerName: "Total",
+      headerName: "Price",
       type: "number",
       minWidth: 130,
       flex: 0.8,
@@ -126,7 +126,7 @@ const AdminDashboardMain = () => {
               <h3
                 className={`${styles.productTitle} !text-[18px] leading-5 !font-[400] text-[#00000085]`}
               >
-                All Orders
+                All Requests
               </h3>
             </div>
             <h5 className="pt-2 pl-[36px] text-[22px] font-[500]">{adminOrders && adminOrders.length}</h5>
