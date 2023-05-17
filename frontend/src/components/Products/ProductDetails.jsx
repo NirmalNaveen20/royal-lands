@@ -5,6 +5,7 @@ import {
   AiOutlineMessage,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+import { BsJournalBookmark } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { getAllProductsShop } from "../../redux/actions/product";
@@ -61,14 +62,14 @@ const ProductDetails = ({ data }) => {
   const addToCartHandler = (id) => {
     const isItemExists = cart && cart.find((i) => i._id === id);
     if (isItemExists) {
-      toast.error("Item already in cart!");
+      toast.error("Already in book");
     } else {
       if (data.stock < 1) {
-        toast.error("Product stock limited!");
+        toast.error("Booking is invalid");
       } else {
         const cartData = { ...data, qty: count };
         dispatch(addTocart(cartData));
-        toast.success("Item added to cart successfully!");
+        toast.success("Booking is added");
       }
     }
   };
@@ -161,7 +162,7 @@ const ProductDetails = ({ data }) => {
 
                 <div className="flex items-center mt-12 justify-between pr-3">
                   <div>
-                    <button
+                    {/* <button
                       className="bg-gradient-to-r from-teal-400 to-teal-500 text-white font-bold rounded-l px-4 py-2 shadow-lg hover:opacity-75 transition duration-300 ease-in-out"
                       onClick={decrementCount}
                     >
@@ -175,7 +176,7 @@ const ProductDetails = ({ data }) => {
                       onClick={incrementCount}
                     >
                       +
-                    </button>
+                    </button> */}
                   </div>
                   <div>
                     {click ? (
@@ -202,7 +203,7 @@ const ProductDetails = ({ data }) => {
                   onClick={() => addToCartHandler(data._id)}
                 >
                   <span className="text-white flex items-center">
-                    Add to cart <AiOutlineShoppingCart className="ml-1" />
+                    Book <BsJournalBookmark className="ml-1" />
                   </span>
                 </div>
                 <div className="flex items-center pt-8">
@@ -267,7 +268,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(1)}
           >
-            Product Details
+            Property Details
           </h5>
           {active === 1 ? (
             <div className={`${styles.active_indicator}`} />
@@ -280,7 +281,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(2)}
           >
-            Product Reviews
+            Agent Reviews
           </h5>
           {active === 2 ? (
             <div className={`${styles.active_indicator}`} />
@@ -293,7 +294,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(3)}
           >
-            Seller Information
+            Agent Information
           </h5>
           {active === 3 ? (
             <div className={`${styles.active_indicator}`} />
@@ -330,7 +331,7 @@ const ProductDetailsInfo = ({
 
           <div className="w-full flex justify-center">
             {data && data.reviews.length === 0 && (
-              <h5>No Reviews have for this product!</h5>
+              <h5>No Reviews have for this Agent!</h5>
             )}
           </div>
         </div>
@@ -365,7 +366,7 @@ const ProductDetailsInfo = ({
                 </span>
               </h5>
               <h5 className="font-[600] pt-3">
-                Total Products:{" "}
+                Total Listings:{" "}
                 <span className="font-[500]">
                   {products && products.length}
                 </span>
@@ -378,7 +379,7 @@ const ProductDetailsInfo = ({
                 <div
                   className={`${styles.button} !rounded-[4px] !h-[39.5px] mt-3`}
                 >
-                  <h4 className="text-white">Visit Shop</h4>
+                  <h4 className="text-white">Visit Profile</h4>
                 </div>
               </Link>
             </div>
