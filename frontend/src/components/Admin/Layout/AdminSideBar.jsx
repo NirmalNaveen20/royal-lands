@@ -9,6 +9,7 @@ import { BsHandbag } from "react-icons/bs";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { AiOutlineSetting } from "react-icons/ai";
 import homelogo from "../../../Images/logo.svg"
+import Assests from "../../../Assests";
 
 const AdminSideBar = ({ active }) => {
   return (
@@ -57,7 +58,7 @@ const AdminSideBar = ({ active }) => {
               active === 3 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Sellers
+            All Agents
           </h5>
         </Link>
       </div>

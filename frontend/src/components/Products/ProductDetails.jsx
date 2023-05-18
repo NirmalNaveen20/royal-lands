@@ -109,7 +109,7 @@ const ProductDetails = ({ data }) => {
           toast.error(error.response.data.message);
         });
     } else {
-      toast.error("Please login to create a conversation");
+      toast.error("Please login to create a Booking");
     }
   };
 
