@@ -28,7 +28,7 @@ const Checkout = () => {
 
   const paymentSubmit = () => {
    if(address1 === "" || address2 === "" || zipCode === null || country === "" || city === ""){
-      toast.error("Please choose your delivery address!")
+      toast.error("Please choose your address!")
    } else{
     const shippingAddress = {
       address1,
@@ -74,7 +74,7 @@ const Checkout = () => {
           cart && cart.filter((item) => item.shopId === shopId);
 
         if (isCouponValid.length === 0) {
-          toast.error("Coupon code is not valid for this shop");
+          toast.error("Offer code is not valid for this Agent");
           setCouponCode("");
         } else {
           const eligiblePrice = isCouponValid.reduce(
@@ -88,7 +88,7 @@ const Checkout = () => {
         }
       }
       if (res.data.couponCode === null) {
-        toast.error("Coupon code doesn't exists!");
+        toast.error("Offer code doesn't exists!");
         setCouponCode("");
       }
     });
@@ -138,7 +138,7 @@ const Checkout = () => {
         className={`${styles.button} w-[150px] 800px:w-[280px] mt-10`}
         onClick={paymentSubmit}
       >
-        <h5 className="text-white">Go to Payment</h5>
+        <h5 className="text-white">Continue Your Book</h5>
       </div>
     </div>
   );
@@ -161,7 +161,7 @@ const ShippingInfo = ({
 }) => {
   return (
     <div className="w-full 800px:w-[95%] bg-white rounded-md p-5 pb-8">
-      <h5 className="text-[18px] font-[500]">Shipping Address</h5>
+      <h5 className="text-[18px] font-[500]">Your Address</h5>
       <br />
       <form>
         <div className="w-full flex pb-3">
@@ -315,12 +315,12 @@ const CartData = ({
   return (
     <div className="w-full bg-[#fff] rounded-md p-5 pb-8">
       <div className="flex justify-between">
-        <h3 className="text-[16px] font-[400] text-[#000000a4]">subtotal:</h3>
+        <h3 className="text-[16px] font-[400] text-[#000000a4]">Subtotal:</h3>
         <h5 className="text-[18px] font-[600]">${subTotalPrice}</h5>
       </div>
       <br />
       <div className="flex justify-between">
-        <h3 className="text-[16px] font-[400] text-[#000000a4]">shipping:</h3>
+        <h3 className="text-[16px] font-[400] text-[#000000a4]">Tax:</h3>
         <h5 className="text-[18px] font-[600]">${shipping.toFixed(2)}</h5>
       </div>
       <br />
@@ -336,7 +336,7 @@ const CartData = ({
         <input
           type="text"
           className={`${styles.input} h-[40px] pl-2`}
-          placeholder="Coupoun code"
+          placeholder="Offer code"
           value={couponCode}
           onChange={(e) => setCouponCode(e.target.value)}
           required

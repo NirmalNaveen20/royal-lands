@@ -36,7 +36,7 @@ const Payment = () => {
           {
             description: "Sunflower",
             amount: {
-              currency_code: "USD",
+              currency_code: "LKR",
               value: orderData?.totalPrice,
             },
           },
@@ -160,7 +160,7 @@ const Payment = () => {
     };
 
     order.paymentInfo = {
-      type: "Cash On Delivery",
+      type: "Pay in arrival",
     };
 
     await axios
@@ -388,7 +388,7 @@ const PaymentInfo = ({
             ) : null}
           </div>
           <h4 className="text-[18px] pl-2 font-[600] text-[#000000b1]">
-            Cash on Delivery
+            Pay on arrival
           </h4>
         </div>
 
@@ -414,12 +414,12 @@ const CartData = ({ orderData }) => {
   return (
     <div className="w-full bg-[#fff] rounded-md p-5 pb-8">
       <div className="flex justify-between">
-        <h3 className="text-[16px] font-[400] text-[#000000a4]">subtotal:</h3>
+        <h3 className="text-[16px] font-[400] text-[#000000a4]">Subtotal:</h3>
         <h5 className="text-[18px] font-[600]">${orderData?.subTotalPrice}</h5>
       </div>
       <br />
       <div className="flex justify-between">
-        <h3 className="text-[16px] font-[400] text-[#000000a4]">shipping:</h3>
+        <h3 className="text-[16px] font-[400] text-[#000000a4]">Tax:</h3>
         <h5 className="text-[18px] font-[600]">${shipping}</h5>
       </div>
       <br />

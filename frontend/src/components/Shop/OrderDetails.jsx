@@ -7,6 +7,7 @@ import { getAllOrdersOfShop } from "../../redux/actions/order";
 import { backend_url, server } from "../../server";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { FcHome } from "react-icons/fc";
 
 const OrderDetails = () => {
   const { orders, isLoading } = useSelector((state) => state.order);
@@ -33,7 +34,7 @@ const OrderDetails = () => {
         { withCredentials: true }
       )
       .then((res) => {
-        toast.success("Order updated!");
+        toast.success("Booking updated!");
         navigate("/dashboard-orders");
       })
       .catch((error) => {
@@ -51,7 +52,7 @@ const OrderDetails = () => {
       { withCredentials: true }
     )
     .then((res) => {
-      toast.success("Order updated!");
+      toast.success("Booking updated!");
       dispatch(getAllOrdersOfShop(seller._id));
     })
     .catch((error) => {
@@ -66,21 +67,21 @@ const OrderDetails = () => {
     <div className={`py-4 min-h-screen ${styles.section}`}>
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center">
-          <BsFillBagFill size={30} color="crimson" />
-          <h1 className="pl-2 text-[25px]">Order Details</h1>
+          <FcHome size={30} color="crimson" />
+          <h1 className="pl-2 text-[25px]">Booking Details</h1>
         </div>
         <Link to="/dashboard-orders">
           <div
             className={`${styles.button} !bg-[#fce1e6] !rounded-[4px] text-[#e94560] font-[600] !h-[45px] text-[18px]`}
           >
-            Order List
+            Reservation List
           </div>
         </Link>
       </div>
 
       <div className="w-full flex items-center justify-between pt-6">
         <h5 className="text-[#00000084]">
-          Order ID: <span>#{data?._id?.slice(0, 8)}</span>
+          Booking ID: <span>#{data?._id?.slice(0, 8)}</span>
         </h5>
         <h5 className="text-[#00000084]">
           Placed on: <span>{data?.createdAt?.slice(0, 10)}</span>
@@ -101,7 +102,7 @@ const OrderDetails = () => {
             <div className="w-full">
               <h5 className="pl-3 text-[20px]">{item.name}</h5>
               <h5 className="pl-3 text-[20px] text-[#00000091]">
-                US${item.discountPrice} x {item.qty}
+                Rs. {item.discountPrice} x {item.qty}
               </h5>
             </div>
           </div>
@@ -136,7 +137,7 @@ const OrderDetails = () => {
       </div>
       <br />
       <br />
-      <h4 className="pt-3 text-[20px] font-[600]">Order Status:</h4>
+      <h4 className="pt-3 text-[20px] font-[600]">Booking Status:</h4>
       {data?.status !== "Processing refund" && data?.status !== "Refund Success" && (
         <select
           value={status}
@@ -146,7 +147,6 @@ const OrderDetails = () => {
           {[
             "Processing",
             "Transferred to delivery partner",
-            "Shipping",
             "Received",
             "On the way",
             "Delivered",
