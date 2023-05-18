@@ -8,6 +8,7 @@ import { backend_url } from "../../server";
 import { useDispatch, useSelector } from "react-redux";
 import { addTocart, removeFromCart } from "../../redux/actions/cart";
 import { toast } from "react-toastify";
+import { BsJournalBookmark } from "react-icons/bs";
 
 const Cart = ({ setOpenCart }) => {
   const { cart } = useSelector((state) => state.cart);
@@ -52,8 +53,8 @@ const Cart = ({ setOpenCart }) => {
               </div>
               {/* Item length */}
               <div className={`${styles.noramlFlex} p-4`}>
-                <IoBagHandleOutline size={25} />
-                <h5 className="pl-2 text-[20px] font-[500]">{cart && cart.length} items</h5>
+                <BsJournalBookmark size={25} />
+                <h5 className="pl-2 text-[20px] font-[500]">{cart && cart.length} Reservation</h5>
               </div>
 
               {/* cart Single Items */}
@@ -96,7 +97,7 @@ const CartSingle = ({ data, quantityChangeHandler, removeFromCartHandler }) => {
 
   const increment = (data) => {
     if (data.stock < value) {
-      toast.error("Product stock limited!");
+      toast.error("Book is not available!");
     } else {
       setValue(value + 1);
       const updateCartData = { ...data, qty: value + 1 };
