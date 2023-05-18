@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { BsStarHalf } from "react-icons/bs";
 
+//Agent flow feedback
 const Ratings = ({ rating }) => {
   const stars = [];
 
