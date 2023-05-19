@@ -8,9 +8,10 @@ import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
 import { server } from "../../server";
 import { toast } from "react-toastify";
-import { getAllSellers } from "../../redux/actions/sellers";
+import { getAllSellers } from "../../redux/actions/sellers";s
 import { Link } from "react-router-dom";
 
+{/* List of agents */}
 const AllSellers = () => {
   const dispatch = useDispatch();
   const { sellers } = useSelector((state) => state.seller);
@@ -49,7 +50,7 @@ const AllSellers = () => {
     },
     {
       field: "address",
-      headerName: "Seller Address",
+      headerName: "Agent Address",
       type: "text",
       minWidth: 130,
       flex: 0.7,
@@ -66,7 +67,7 @@ const AllSellers = () => {
         field: "  ",
         flex: 1,
         minWidth: 150,
-        headerName: "Preview Shop",
+        headerName: "Preview Agent",
         type: "number",
         sortable: false,
         renderCell: (params) => {
