@@ -10,6 +10,7 @@ import { getAllOrdersOfAdmin } from "../../redux/actions/order";
 import Loader from "../Layout/Loader";
 import { getAllSellers } from "../../redux/actions/sellers";
 
+{/* Agent management section */}
 const AdminDashboardMain = () => {
   const dispatch = useDispatch();
 
@@ -42,7 +43,7 @@ const AdminDashboardMain = () => {
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
