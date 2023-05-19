@@ -66,7 +66,7 @@ const ProfileContent = ({ active }) => {
       })
       .then((response) => {
          dispatch(loadUser());
-         toast.success("Profile updated successfully!");
+         toast.success("avatar updated successfully!");
       })
       .catch((error) => {
         toast.error(error);
@@ -207,7 +207,7 @@ const AllOrders = () => {
   }, []);
 
   const columns = [
-    { field: "id", headerName: "Booking ID", minWidth: 150, flex: 0.7 },
+    { field: "id", headerName: "Order ID", minWidth: 150, flex: 0.7 },
 
     {
       field: "status",
@@ -627,7 +627,7 @@ const Address = () => {
                         ))}
                     </select>
                   </div>
-
+                  
                   <div className="w-full pb-2">
                     <label className="block pb-2">Choose your City</label>
                     <select

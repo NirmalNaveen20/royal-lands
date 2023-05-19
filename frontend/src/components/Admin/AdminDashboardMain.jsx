@@ -35,14 +35,14 @@ const AdminDashboardMain = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -57,7 +57,7 @@ const AdminDashboardMain = () => {
     },
     {
       field: "createdAt",
-      headerName: "Order Date",
+      headerName: "Booking Date",
       type: "number",
       minWidth: 130,
       flex: 0.8,

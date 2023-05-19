@@ -117,7 +117,7 @@ const OrderDetails = () => {
       <br />
       <div className="w-full 800px:flex items-center">
         <div className="w-full 800px:w-[60%]">
-          <h4 className="pt-3 text-[20px] font-[600]">Shipping Address:</h4>
+          <h4 className="pt-3 text-[20px] font-[600]">User Information:</h4>
           <h4 className="pt-3 text-[20px]">
             {data?.shippingAddress.address1 +
               " " +
@@ -137,7 +137,7 @@ const OrderDetails = () => {
       </div>
       <br />
       <br />
-      <h4 className="pt-3 text-[20px] font-[600]">Booking Status:</h4>
+      <h4 className="pt-3 text-[20px] font-[600]">Refund Status:</h4>
       {data?.status !== "Processing refund" && data?.status !== "Refund Success" && (
         <select
           value={status}
@@ -146,19 +146,20 @@ const OrderDetails = () => {
         >
           {[
             "Processing",
-            "Transferred to delivery partner",
-            "Received",
-            "On the way",
-            "Delivered",
+            "Booking Received",
+            "Booking Pending Approval",
+            "Booking Declined",
+            "Booking Ready for Check-in",
+            "Booking Completed",
           ]
             .slice(
               [
                 "Processing",
-                "Transferred to delivery partner",
+                "Booking Pending Approval",
                 "Shipping",
-                "Received",
-                "On the way",
-                "Delivered",
+                "Booking Declined",
+                "Booking Ready for Check-in",
+                "Booking Completed",
               ].indexOf(data?.status)
             )
             .map((option, index) => (

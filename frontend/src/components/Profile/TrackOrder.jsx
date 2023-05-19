@@ -21,25 +21,25 @@ const TrackOrder = () => {
       {" "}
       <>
         {data && data?.status === "Processing" ? (
-          <h1 className="text-[20px]">Your Order is processing in shop.</h1>
-        ) : data?.status === "Transferred to delivery partner" ? (
+          <h1 className="text-[20px]">Your Reservation is processing by agent.</h1>
+        ) : data?.status === "Booking Received" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way for delivery partner.
+            Your booking is being processed. working on confirming the availability of the property and will provide further updates soon.
           </h1>
-        ) : data?.status === "Shipping" ? (
+        ) : data?.status === "Booking Pending Approval" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way with our delivery partner.
+            Booking is awaiting confirmation from the property agent or company. Your booking request is in progress and will be reviewed soon.
           </h1>
-        ) : data?.status === "Received" ? (
+        ) : data?.status === "Booking Declined" ? (
           <h1 className="text-[20px]">
-            Your Order is in your city. Our Delivery man will deliver it.
+            Your booking request is declined or not approved.
           </h1>
-        ) : data?.status === "On the way" ? (
+        ) : data?.status === "Booking Ready for Check-in" ? (
           <h1 className="text-[20px]">
-            Our Delivery man is going to deliver your order.
+            Your booking is ready for check-in. Provide details on check-in procedures, due payments ,key collection, or any other necessary information.
           </h1>
-        ) : data?.status === "Delivered" ? (
-          <h1 className="text-[20px]">Your order is delivered!</h1>
+        ) : data?.status === "Booking Completed" ? (
+          <h1 className="text-[20px]">Your booking is completed!</h1>
         ) : data?.status === "Processing refund" ? (
           <h1 className="text-[20px]">Your refund is processing!</h1>
         ) : data?.status === "Refund Success" ? (
