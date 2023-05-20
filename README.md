@@ -1,6 +1,6 @@
 ## RoyalLands - MERN Stack Real Estate Website
 
-RoyalLands is a full-stack web application built using the MERN (MongoDB, Express, React, Node.js) stack. This web application allows property agents to list their properties, and users or investors can view listings, request to rent a property, or contact the agent through a live chat service. The web application is designed to simplify the process of finding and renting properties, making it easier for users to browse through available properties and connect with agents.
+RoyalLands is a full-stack web test application built using the MERN (MongoDB, Express, React, Node.js) stack. This web application allows property agents to list their properties, and users or investors can view listings, request to rent a property, or contact the agent through a live chat service. The web application is designed to simplify the process of finding and renting properties, making it easier for users to browse through available properties and connect with agents.
 Installation
 
 To install RoyalLands, follow these steps:
