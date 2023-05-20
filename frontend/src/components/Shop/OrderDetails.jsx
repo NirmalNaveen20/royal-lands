@@ -137,7 +137,7 @@ const OrderDetails = () => {
       </div>
       <br />
       <br />
-      <h4 className="pt-3 text-[20px] font-[600]">Refund Status:</h4>
+      <h4 className="pt-3 text-[20px] font-[600]">Booking Status:</h4>
       {data?.status !== "Processing refund" && data?.status !== "Refund Success" && (
         <select
           value={status}
@@ -155,8 +155,8 @@ const OrderDetails = () => {
             .slice(
               [
                 "Processing",
+                "Booking Received",
                 "Booking Pending Approval",
-                "Shipping",
                 "Booking Declined",
                 "Booking Ready for Check-in",
                 "Booking Completed",
