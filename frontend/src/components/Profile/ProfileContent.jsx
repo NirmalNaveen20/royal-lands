@@ -66,7 +66,7 @@ const ProfileContent = ({ active }) => {
       })
       .then((response) => {
          dispatch(loadUser());
-         toast.success("avatar updated successfully!");
+         toast.success("Profile updated successfully!");
       })
       .catch((error) => {
         toast.error(error);
@@ -222,7 +222,7 @@ const AllOrders = () => {
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -309,7 +309,7 @@ const AllRefundOrders = () => {
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -394,7 +394,7 @@ const TrackOrder = () => {
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
