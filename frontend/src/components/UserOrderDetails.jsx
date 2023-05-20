@@ -124,7 +124,7 @@ const UserOrderDetails = () => {
               />
             </div>
             <h2 className="text-[30px] font-[500] font-Poppins text-center">
-              Give a Review
+              Give a Review For Agent
             </h2>
             <br />
             <div className="w-full flex">
@@ -174,7 +174,6 @@ const UserOrderDetails = () => {
               <label className="block text-[20px] font-[500]">
                 Write a comment
                 <span className="ml-1 font-[400] text-[16px] text-[#00000052]">
-                  (optional)
                 </span>
               </label>
               <textarea
@@ -184,7 +183,7 @@ const UserOrderDetails = () => {
                 rows="5"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
-                placeholder="How was your product? write your expresion about it!"
+                placeholder="How was your experience with the rental? write your expresion about it!"
                 className="mt-2 w-[95%] border p-2 outline-none"
               ></textarea>
             </div>

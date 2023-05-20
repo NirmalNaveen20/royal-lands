@@ -215,7 +215,7 @@ const AllOrders = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
@@ -302,7 +302,7 @@ const AllRefundOrders = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
@@ -387,7 +387,7 @@ const TrackOrder = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
@@ -627,7 +627,7 @@ const Address = () => {
                         ))}
                     </select>
                   </div>
-                  
+
                   <div className="w-full pb-2">
                     <label className="block pb-2">Choose your City</label>
                     <select
