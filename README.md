@@ -9,6 +9,7 @@ RoyalLands is designed to be user-friendly, with a clean and intuitive interface
 
 Property agents can use the agent dashboard to add new property listings, update existing listings, and manage requests from potential renters. The dashboard also includes analytics and insights about the performance of their listings.
 
+
 ## Installation
 
 To install RoyalLands, follow these steps
@@ -40,7 +41,6 @@ The key features of the RoyalLands web application include:
 - [@IT21112300 Shashikala W. A. A.](https://www.github.com/IT21112300)
 
 - [@IT21128554 Weerasooriya K.A.M](https://www.github.com/IT21128554)
-
 
 
 
