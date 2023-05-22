@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineGift } from 'react-icons/ai'
+import { AiOutlineGift, AiOutlineHome } from 'react-icons/ai'
 import { BiMessageSquareDetail } from 'react-icons/bi'
 import { FiPackage, FiShoppingBag } from 'react-icons/fi'
 import { MdOutlineLocalOffer } from 'react-icons/md'
@@ -23,7 +23,7 @@ const AdminHeader = () => {
       <div className="flex items-center">
         <div className="flex items-center mr-4">
           <Link to="/dashboard/cupouns" className="800px:block hidden">
-            <AiOutlineGift
+            <AiOutlineHome
               color="#555"
               size={30}
               className="mx-5 cursor-pointer"

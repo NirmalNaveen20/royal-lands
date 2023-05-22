@@ -1,4 +1,5 @@
 
+
 ![Logo](https://public-images-view.s3.amazonaws.com/Untitled+design.png)
 
 # RoyalLands - MERN Stack Real Estate Website
@@ -8,6 +9,7 @@ RoyalLands is a full-stack web application built using the MERN (MongoDB, Expres
 RoyalLands is designed to be user-friendly, with a clean and intuitive interface. Users can browse through the listings and filter them by various criteria, such as location, price, and property type. Each property listing includes detailed information about the property, including images, price, and description. Users can also request to rent a property directly from the listing page or use the live chat service to contact the agent in real-time.
 
 Property agents can use the agent dashboard to add new property listings, update existing listings, and manage requests from potential renters. The dashboard also includes analytics and insights about the performance of their listings.
+
 
 ## Installation
 
@@ -43,7 +45,6 @@ The key features of the RoyalLands web application include:
 
 
 
-
 ## Screenshots
 
 ![App Screenshot](https://public-images-view.s3.amazonaws.com/Screenshot+2023-05-22+at+8.53.18+PM.png)
@@ -57,8 +58,6 @@ The key features of the RoyalLands web application include:
 ![App Screenshot](https://public-images-view.s3.amazonaws.com/Screenshot+2023-05-22+at+8.58.37+PM.png)
 
 ![App Screenshot](https://public-images-view.s3.amazonaws.com/Screenshot+2023-05-22+at+8.55.53+PM.png)
-
-
 
 
 ## Support

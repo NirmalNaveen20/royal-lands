@@ -66,7 +66,7 @@ const ProfileContent = ({ active }) => {
       })
       .then((response) => {
          dispatch(loadUser());
-         toast.success("avatar updated successfully!");
+         toast.success("Profile updated successfully!");
       })
       .catch((error) => {
         toast.error(error);
@@ -215,14 +215,14 @@ const AllOrders = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -302,14 +302,14 @@ const AllRefundOrders = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -387,14 +387,14 @@ const TrackOrder = () => {
       minWidth: 130,
       flex: 0.7,
       cellClassName: (params) => {
-        return params.getValue(params.id, "status") === "Delivered"
+        return params.getValue(params.id, "status") === "Booking Completed"
           ? "greenColor"
           : "redColor";
       },
     },
     {
       field: "itemsQty",
-      headerName: "Items Qty",
+      headerName: "Days",
       type: "number",
       minWidth: 130,
       flex: 0.7,
@@ -627,7 +627,7 @@ const Address = () => {
                         ))}
                     </select>
                   </div>
-                  
+
                   <div className="w-full pb-2">
                     <label className="block pb-2">Choose your City</label>
                     <select
