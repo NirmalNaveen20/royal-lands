@@ -1,6 +1,5 @@
 
-
-![Logo](https://public-images-view.s3.amazonaws.com/Untitled+design.png)
+![Logo](https://public-images-view.s3.amazonaws.com/logo.png)
 
 # RoyalLands - MERN Stack Real Estate Website
 
