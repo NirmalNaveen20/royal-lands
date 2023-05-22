@@ -8,10 +8,9 @@ import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
 import { server } from "../../server";
 import { toast } from "react-toastify";
-import { getAllSellers } from "../../redux/actions/sellers";s
+import { getAllSellers } from "../../redux/actions/sellers";
 import { Link } from "react-router-dom";
 
-{/* List of agents */}
 const AllSellers = () => {
   const dispatch = useDispatch();
   const { sellers } = useSelector((state) => state.seller);
