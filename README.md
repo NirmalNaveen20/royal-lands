@@ -36,7 +36,7 @@ The key features of the RoyalLands web application include:
 
 - [@IT21112300 Chandrasiri G.K.N.N](https://www.github.com/NirmalNaveen20)
 
-- [@T21138072 Karunarathna W. P. D. B](https://www.github.com/T21138072)
+- [@T21138072 Karunarathna W. P. D. B](https://www.github.com/IT21138072)
 
 - [@IT21112300 Shashikala W. A. A.](https://www.github.com/IT21112300)
 
