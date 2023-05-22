@@ -1,5 +1,5 @@
 
-![Logo](https://public-images-view.s3.amazonaws.com/Untitled+design.png)
+![Logo](https://public-images-view.s3.amazonaws.com/logo.png)
 
 # RoyalLands - MERN Stack Real Estate Website
 
@@ -57,8 +57,6 @@ The key features of the RoyalLands web application include:
 ![App Screenshot](https://public-images-view.s3.amazonaws.com/Screenshot+2023-05-22+at+8.58.37+PM.png)
 
 ![App Screenshot](https://public-images-view.s3.amazonaws.com/Screenshot+2023-05-22+at+8.55.53+PM.png)
-
-
 
 
 ## Support
