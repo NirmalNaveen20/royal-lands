@@ -47,11 +47,6 @@ const AdminHeader = () => {
             <FiPackage color="#555" size={30} className="mx-5 cursor-pointer" />
           </Link>
           <Link to="/dashboard-messages" className="800px:block hidden">
-            <BiMessageSquareDetail
-              color="#555"
-              size={30}
-              className="mx-5 cursor-pointer"
-            />
           </Link>
             <img
               src={`${backend_url}${user?.avatar}`}

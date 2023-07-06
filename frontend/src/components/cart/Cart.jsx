@@ -51,13 +51,13 @@ const Cart = ({ setOpenCart }) => {
                   onClick={() => setOpenCart(false)}
                 />
               </div>
-              {/* Item length */}
+              {/* length */}
               <div className={`${styles.noramlFlex} p-4`}>
                 <BsJournalBookmark size={25} />
                 <h5 className="pl-2 text-[20px] font-[500]">{cart && cart.length} Reservation</h5>
               </div>
 
-              {/* cart Single Items */}
+              {/* wishlist */}
               <br />
               <div className="w-full border-t">
                 {cart &&
